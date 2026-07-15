@@ -6,6 +6,7 @@ Topics include:
 - Higher category theory
 - Algebraic and analytic geometry from a categorical perspective
 - Mathematical logic
+- Mathematics for Machine Learning
 
 PDF versions are included for easy reading.
 
