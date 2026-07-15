@@ -1,0 +1,17 @@
+# File temporanei LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# File di sistema/editor
+.DS_Store
+Thumbs.db
+.vscode/
