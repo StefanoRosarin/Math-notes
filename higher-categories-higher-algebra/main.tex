@@ -1,66 +1,35 @@
-%laden der Präambel mit Latexbefehlen/-klassen
 \include{preamble}
 \include{Math}
 \usepackage[english]{cleveref}
 
-% DATEN AKTUALISIEREN!
-% Ort der Exkursion
-% Datum der Exkursion
 \def\VARdatum{\today}
-% Autor*in: Vorname und Name 
 \def\VARname{Stefano Rosarin}
 
 \begin{document}
-	%globale Einstellung für Quellcodedarstellung mit listings
 	\lstset{basicstyle=\scriptsize\ttfamily,language={[LaTeX]TeX}}
 	
-	%Seitennummerierung arabisch
 	\pagenumbering{arabic}
 	
-	%Titel
 	\input{Title}
-	%Abstract
 	\input{Abstract}
-	%Inhaltsverzeichnis
 	\setcounter{tocdepth}{2}
 	\tableofcontents
 	\clearpage
 	
-	\section{$\infty$-operads}
-	\input{Operad}
+	% Per la lezione di introduzione 
+	\setcounter{section}{-1}
+	\section{Introduction}
+	\input{Intro}
+	
+	\clearpage
+	\section{Introduction}
+	\input{Intro}
 	
 	
 	\appendix
 	
-	\section{Stable $\infty$-categories}
-	\input{StableCat}
-		
-	
 	\clearpage
 	
-	%\input{App_model}
-	%weitere Kapitel hier einfügen
-	%\input{03_neues_kapitel}
-	
-	%Literatur
-	\clearpage
 	\printbibliography[heading=bibintoc]
-	
-	
-	%Abbildungsverzeichnis
-%	\clearpage
-%	\addcontentsline{toc}{section}{\listfigurename}
-%	\listoffigures
-	
-	%Tabellenverzeichnis
-%	\clearpage
-%	\addcontentsline{toc}{section}{\listtablename}
-%	\listoftables
-	
-	%Anhang
-	%Ausführliche Datentabellen, umfangreiche Fließbilder und lange Berechnungen können in den Anhang
-	%\clearpage
-	%\appendix
-	%\input{99_anhang}
 	
 \end{document}
