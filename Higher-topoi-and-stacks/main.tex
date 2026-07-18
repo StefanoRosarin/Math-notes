@@ -1,0 +1,31 @@
+\input{preamble}
+\input{Math}
+
+\addbibresource{Bibliography/Biblio.bib}
+
+\def\VARdatum{\today}
+\def\VARname{Stefano Rosarin}
+
+\begin{document}
+	
+	\lstset{
+		basicstyle=\scriptsize\ttfamily,
+		language={[LaTeX]TeX}
+	}
+	
+	\pagenumbering{arabic}
+	
+	\input{Title}
+	\input{Abstract}
+	
+	\setcounter{tocdepth}{2}
+	\tableofcontents
+	
+	\input{Intro}
+	\input{GTopology-Sheaves}
+	\input{LocalicTopoi}
+	
+	\clearpage
+	\printbibliography[heading=bibintoc]
+	
+\end{document}
